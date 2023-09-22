@@ -1,5 +1,5 @@
 {
-  "name": "ui8-uo-agency",
+  "name": "designers-clan",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -26,5 +26,8 @@
   "devDependencies": {
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "author": {
+    "name": "jisan-mia"
   }
 }
