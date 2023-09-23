@@ -3,12 +3,12 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  // basePath: isProd ? "/designers-clan" : "",
-  // output: "export",
+  basePath: isProd ? "/designers-clan" : "",
+  output: "export",
   distDir: "dist",
-  // images: {
-  //   unoptimized: true,
-  // },
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig
