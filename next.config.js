@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
-  output: 'export',
-  distDir: 'dist',
+  basePath: isProd ? "/designers-clan" : "",
+  output: "export",
+  distDir: "dist",
   images: {
-    unoptimized: true
-  }
-}
+    unoptimized: true,
+  },
+};
 
 module.exports = nextConfig
