@@ -74,7 +74,7 @@ export default function Hero() {
           delay: 0.4,
         }}
       >
-        <Image src="/hero.jpg" alt="Our Team" fill className="object-cover" />
+        <Image src="/hero2.jpg" alt="Our Team" fill className="object-cover" />
       </motion.figure>
     </section>
   );

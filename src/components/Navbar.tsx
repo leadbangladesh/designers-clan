@@ -177,15 +177,12 @@ export default function Navbar() {
       />
       <div className="mx-auto flex max-w-[77.5rem] items-center justify-between px-[1.5rem] py-[2.5rem] md:py-[1rem]">
         {/* logo */}
-        <Link
-          href="/"
-          className="relative h-[2.5rem] w-[9.06rem] select-none md:h-[4rem] md:w-[13.31rem]"
-        >
+        <Link href="/" className="relative h-[2.5rem] select-none md:h-[4rem]">
           <Image
-            src="/logo3.png"
+            src="/logomain.jpg"
             alt="Designers Clan Logo"
-            height={126}
-            width={600}
+            height={870}
+            width={1530}
             className="h-full w-full object-contain"
           />
         </Link>

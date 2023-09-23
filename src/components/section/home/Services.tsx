@@ -9,7 +9,7 @@ type OurServices = {
   desc: string;
 };
 
-export const ourServices: OurServices[] = [
+export const ourServicesPrev: OurServices[] = [
   {
     name: "UI/UX Design",
     desc: "We create captivating interfaces that enhance digital experiences, combining artistic creativity with user-centric principles.",
@@ -37,6 +37,41 @@ export const ourServices: OurServices[] = [
   {
     name: "Development",
     desc: "From conceptualization to execution, our agile methodology yields tailor-made software solutions that catalyze business expansion, characterized by meticulous attention to detail and an unwavering focus on user experience.",
+  },
+];
+
+export const ourServices: OurServices[] = [
+  {
+    name: "Media Buying (Boosting)",
+    desc: "Discounted dollars from coupons or unauthorized sources won't work. Ensure safe, legitimate media buying via your Facebook authorized ad account, paying VAT. Your page stays secure. Pay conveniently with bKash/Rocket/Cash/Debit-Credit Card/Internet Banking: designersclan.com/facebook-page-promotion/ For more info/customized budgets, call/WhatsApp +8801306275181.",
+  },
+  {
+    name: "Public Relations",
+    desc: "We help you create a lasting impression on your prospective customer bases by branding you and your company as a solution to their problems. Our expert PR team helps you make a bold statement in this ever changing business world. We offer this service for professionals, businesses, and events.",
+  },
+  {
+    name: "Community Management",
+    desc: "Our highly trained professionals manage your social media and website handles to keep an effective flow of information between your customers and your business. The service additionally includes a monthly report by our expert data analysis unit.",
+  },
+  {
+    name: "Project Management/Execution",
+    desc: "Our top notch project management services can help your organization achieve project goals and objectives within scope, time, and budgetary constraints. From conceptualization to completion we perform some or all of the activities related to project work.",
+  },
+  {
+    name: "Marketing",
+    desc: "We merge imagination with technology and create a story that resonates with your brand identity. Step up your marketing game with us.",
+  },
+  {
+    name: "Designing",
+    desc: "We skillfully merge your vision with our competency. Design banners, posters, leaflets for your business just the way you envisioned. Tell your story in a way it has never been told before.",
+  },
+  {
+    name: "Website/App Development",
+    desc: "Your website is often the first point of contact between your business and your brand's prospective clients. Make it count! Get yourself or your business a well executed, SEO friendly website through Designers’ Clan.",
+  },
+  {
+    name: "Digital Marketing",
+    desc: "We have brought aboard the opportunity to connect and engage with thousands of consumers online. With our digital marketing services you can give your organization ample exposure in the digital field.",
   },
 ];
 
