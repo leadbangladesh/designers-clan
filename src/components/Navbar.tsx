@@ -20,9 +20,9 @@ type DrawerProps = {
 
 const routes: Route[] = [
   { name: "Home", route: "/" },
+  { name: "Our Services", route: "/#services" },
   { name: "About", route: "/about" },
   // { name: "Our Works", route: "/works" },
-  { name: "Our Services", route: "/services" },
 ];
 
 // animation
@@ -90,7 +90,7 @@ function Drawer({ handleClose }: DrawerProps) {
                 isActive ? "font-bold" : "font-medium"
               }`}
             >
-              {route.name}
+              <Link href={route.route}>{route.name}</Link>
             </button>
           ) : (
             <Link

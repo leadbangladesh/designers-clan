@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="relative flex flex-col gap-[1rem] overflow-visible md:gap-[1.5rem]">
         {/* derocation */}
         <motion.div
-          className="absolute left-0 top-[-1.5rem] h-[1.2rem] w-[3.13rem] rounded-full border border-black-50 md:top-[-4rem] md:h-[3rem] md:w-[7.75rem]"
+          className="absolute left-0 top-[-1.5rem] flex h-[1.2rem] w-[3.13rem] items-center justify-center rounded-full border border-black-50 md:top-[-4rem] md:h-[3rem] md:w-[7.75rem]"
           initial={{
             scale: 0.8,
             opacity: 0,
@@ -22,7 +22,9 @@ export default function Hero() {
           transition={{
             delay: 0.6,
           }}
-        />
+        >
+          <span className="text-[8px] md:text-[16px]">Welcome</span>
+        </motion.div>
         <motion.div
           className="absolute bottom-[-1.5rem] right-0 h-[1rem] w-[2.5rem] rounded-full border border-black-50 md:h-[1.9rem] md:w-[4.06rem]"
           initial={{
@@ -39,16 +41,18 @@ export default function Hero() {
         />
 
         <motion.h1
-          className="text-h1 max-w-[64.31rem]"
+          className="text-h2 "
           variants={defaultAnimation}
           initial="initial"
           animate="animate"
         >
-          We are a <span className="text-blue-100">digital agency</span> that
-          will save your life
+          {/* We are a <span className="text-blue-100">digital agency</span> that
+          will save your life  */}
+          Where Pixels and Passion Converge into{" "}
+          <span className="text-blue-100">digital masterpieces</span>
         </motion.h1>
         <motion.span
-          className="text-sm max-w-[41.69rem] text-black-70"
+          className="text-sm max-w-[41.69rem] text-black-70 "
           variants={defaultAnimation}
           initial="initial"
           animate="animate"

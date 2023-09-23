@@ -1,10 +1,9 @@
 import {
-	Hero,
 	CompanyCollaboration,
+	Hero,
 	Passion,
-	Services,
-	RecentWorks,
 	Promise,
+	Services
 } from "../components/section/home"
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
 			<CompanyCollaboration />
 			<Passion />
 			<Services />
-			<RecentWorks />
+			{/* <RecentWorks /> */}
 			<Promise />
 		</>
 	)

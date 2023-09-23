@@ -15,7 +15,19 @@ export const ourServices: OurServices[] = [
     desc: "We create captivating interfaces that enhance digital experiences, combining artistic creativity with user-centric principles.",
   },
   {
-    name: "Branding",
+    name: "Web Development",
+    desc: "Creating websites that are both durable and adaptable, ensuring flawless functionality on various screens and devices for a seamless user experience.",
+  },
+  {
+    name: "Mobile App Development",
+    desc: "Developing user-friendly, feature-packed mobile applications designed to captivate and retain user interest effectively and efficiently.",
+  },
+  {
+    name: "Digital Marketing",
+    desc: "Driving brand awareness and growth through tailored digital marketing strategies.",
+  },
+  {
+    name: "Branding Services",
     desc: "Our proficiency in branding empowers businesses to forge a robust identity, encompassing distinctive logos and compelling messaging that deeply resonates with their intended audience.",
   },
   {
@@ -31,6 +43,7 @@ export const ourServices: OurServices[] = [
 export default function Services() {
   return (
     <motion.section
+      id="services"
       className="mx-auto mt-[1.5rem] max-w-[77.5rem] px-[1.5rem] py-[2rem] md:mt-[0.5rem] md:py-[3.75rem]"
       variants={defaultAnimation}
       initial="initial"
@@ -41,17 +54,19 @@ export default function Services() {
       }}
     >
       <div className="flex flex-col items-start gap-[2rem] md:flex-row md:items-center md:justify-between md:gap-[1.5rem]">
-        <div className="flex max-w-[39.38rem] flex-1 flex-col gap-[1rem] md:gap-[1.5rem]">
-          <h2 className="text-h2">We provide the best service for you</h2>
-          <p className="text-sm text-black-70">
-            We provide the best service for you, tailored to meet your unique
-            needs and exceed your expectations, ensuring your utmost
-            satisfaction.
+        <div className="flex flex-1 flex-col gap-[1rem] md:gap-[1.5rem]">
+          <h2 className="text-h2">
+            We Create meaningful digital solutions that level up your business
+          </h2>
+          <p className="text-sm max-w-[39.38rem] text-black-70">
+            Elevating businesses with expertly designed and executed digital
+            strategies. Designers Clan is here to help you conquer the online
+            space one pixel at a time.
           </p>
+          <Link href={"/contact"}>
+            <button className="btn-blue"> Request a quote</button>
+          </Link>
         </div>
-        <Link href={"/contact"}>
-          <button className="btn-blue"> Request a quote</button>
-        </Link>
       </div>
 
       {/* services list */}

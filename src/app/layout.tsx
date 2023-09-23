@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className=" scroll-p-[96px] scroll-smooth">
       <body className={`${plusJakartaSans.className} text-black-100`}>
         <Navbar />
         <main className="mt-[7.5rem] md:mt-[6rem]">{children}</main>
