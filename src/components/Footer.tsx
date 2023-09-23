@@ -2,10 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import FooterServices from "./FooterServices";
 import SocialSection from "./SocialSection";
 
 export default function Footer() {
+  const router = useRouter();
+
   return (
     <footer
       style={{
@@ -29,7 +32,7 @@ export default function Footer() {
                   <div className="xs:max-w-xs grid gap-6">
                     <div className="relative  w-[200px] text-primary">
                       <Image
-                        src="/logo3.png"
+                        src={`${router.basePath}/logo3.png`}
                         alt="Designers Clan Logo"
                         height={126}
                         width={600}
