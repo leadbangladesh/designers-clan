@@ -3,11 +3,8 @@
 import { defaultAnimation } from "@/src/app/utils/animation";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 export default function Hero() {
-  const router = useRouter();
-
   return (
     <section className="mx-auto max-w-[77.5rem] px-[1.5rem] pt-[3.75rem] md:pt-[5rem]">
       <div className="relative flex flex-col gap-[1rem] overflow-visible md:gap-[1.5rem]">
@@ -77,12 +74,7 @@ export default function Hero() {
           delay: 0.4,
         }}
       >
-        <Image
-          src={`${router.basePath}/hero.jpg`}
-          alt="Our Team"
-          fill
-          className="object-cover"
-        />
+        <Image src="/hero.jpg" alt="Our Team" fill className="object-cover" />
       </motion.figure>
     </section>
   );

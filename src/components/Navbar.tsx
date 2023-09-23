@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
 import { useEffect, useReducer, useRef, useState } from "react";
 import { trapTabKey } from "../app/utils";
 import { fadeAnimation } from "../app/utils/animation";
@@ -165,7 +164,6 @@ export default function Navbar() {
       document.body.classList.remove("overflow-hidden");
     }
   }, [isNavOpen]);
-  const router = useRouter();
 
   return (
     <nav className="fixed top-0 z-10 w-full bg-white" onKeyDown={trapTabKey}>
@@ -184,7 +182,7 @@ export default function Navbar() {
           className="relative h-[2.5rem] w-[9.06rem] select-none md:h-[4rem] md:w-[13.31rem]"
         >
           <Image
-            src={`${router.basePath}/logo3.png`}
+            src="/logo3.png"
             alt="Designers Clan Logo"
             height={126}
             width={600}
