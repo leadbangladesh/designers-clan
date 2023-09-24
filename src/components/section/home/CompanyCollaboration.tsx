@@ -34,7 +34,6 @@ export default function CompanyCollaboration() {
         <span className="text-blue-100">50+ leading companies</span>
       </p>
 
-      {/* companies logo */}
       <div className="flex flex-wrap items-center justify-center gap-4">
         {collaborateCompanies.map((company) => (
           <div
